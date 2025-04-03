@@ -1,0 +1,10 @@
+pandas
+numpy
+nltk
+textblob
+vaderSentiment
+matplotlib
+seaborn
+plotly
+dash
+streamlit
