@@ -45,10 +45,9 @@ sentiment_analysis_dashboard/
 ├── screenshots/
 │   ├── sentiment_distribution.png
 │   └── sentiment_over_time.png
-├── src/
-│   ├── data_preprocessing.py
-│   ├── sentiment_analysis.py
-│   └── dashboard.py
+├── data_preprocessing.py
+├── sentiment_analysis.py
+├── dashboard.py
 ├── requirements.txt
 └── README.md
 ```
@@ -79,19 +78,19 @@ To get this project up and running on your local machine, follow these steps:
 1.  **Preprocess the data:**
     This script will clean the raw review data.
     ```sh
-    python src/data_preprocessing.py
+    python data_preprocessing.py
     ```
 
 2.  **Perform sentiment analysis:**
     This script will analyze the sentiment of the cleaned text.
     ```sh
-    python src/sentiment_analysis.py
+    python sentiment_analysis.py
     ```
 
 3.  **Run the Streamlit dashboard:**
     This will start the web server and open the dashboard in your browser.
     ```sh
-    streamlit run src/dashboard.py
+    streamlit run dashboard.py
     ```
 
 ## Data
