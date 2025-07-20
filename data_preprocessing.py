@@ -1,6 +1,7 @@
 import pandas as pd
 import re
 import string
+import os
 
 def clean_text(text):
     if pd.isna(text):
@@ -20,5 +21,10 @@ def preprocess_data(filepath):
     return df
 
 if __name__ == "__main__":
+    # Ensure the data directory exists
+    if not os.path.exists('data'):
+        os.makedirs('data')
+        
     df = preprocess_data("data/Reviews.csv")
     df.to_csv("data/clean_amazon_reviews.csv", index=False)
+    print("Data preprocessing complete. Saved to data/clean_amazon_reviews.csv")

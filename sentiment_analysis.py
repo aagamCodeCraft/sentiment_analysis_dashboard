@@ -19,5 +19,6 @@ def apply_sentiment_analysis(filepath):
     return df
 
 if __name__ == "__main__":
-    df = apply_sentiment_analysis(r"C:\Users\aagam\OneDrive\Desktop\Resume project\sentiment_analysis_dashboard\data\clean_amazon_reviews.csv")
-    df.to_csv(r"C:\Users\aagam\OneDrive\Desktop\Resume project\sentiment_analysis_dashboard\data\sentiment_amazon_reviews.csv", index=False)
+    df = apply_sentiment_analysis("data/clean_amazon_reviews.csv")
+    df.to_csv("data/sentiment_amazon_reviews.csv", index=False)
+    print("Sentiment analysis complete. Saved to data/sentiment_amazon_reviews.csv")

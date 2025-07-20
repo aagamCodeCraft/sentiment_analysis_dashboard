@@ -19,13 +19,13 @@ Here are some screenshots of the dashboard in action.
 
 This chart shows the total number of reviews for each sentiment category.
 
-![Sentiment Distribution](screenshots/sentiment_distribution.png)
+![Sentiment Distribution](screenshot/sentiment_distribution.png)
 
 ### Sentiment Over Time
 
 This chart shows how the volume of positive, neutral, and negative reviews has changed over time.
 
-![Sentiment Over Time](screenshots/sentiment_over_time.png)
+![Sentiment Over Time](screenshot/sentiment_over_time.png)
 
 ## Technologies Used
 
@@ -41,8 +41,8 @@ This chart shows how the volume of positive, neutral, and negative reviews has c
 ```
 sentiment_analysis_dashboard/
 ├── data/
-│   └── amazon_reviews.csv
-├── screenshots/
+│   └── Reviews.csv
+├── screenshot/
 │   ├── sentiment_distribution.png
 │   └── sentiment_over_time.png
 ├── data_preprocessing.py
@@ -76,13 +76,13 @@ To get this project up and running on your local machine, follow these steps:
 ## How to Run
 
 1.  **Preprocess the data:**
-    This script will clean the raw review data.
+    This script will clean the raw review data and create `clean_amazon_reviews.csv`.
     ```sh
     python data_preprocessing.py
     ```
 
 2.  **Perform sentiment analysis:**
-    This script will analyze the sentiment of the cleaned text.
+    This script will analyze the sentiment and create `sentiment_amazon_reviews.csv`.
     ```sh
     python sentiment_analysis.py
     ```
@@ -95,7 +95,7 @@ To get this project up and running on your local machine, follow these steps:
 
 ## Data
 
-The dataset used for this project is the "Amazon Fine Food Reviews" dataset from Kaggle. You can find more details and download it from [here](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews).
+The dataset used for this project is the "Amazon Fine Food Reviews" dataset from Kaggle. You can find more details and download it from [here](https://www.kaggle.com/datasets/snap/amazon-fine-food-reviews). Place the `Reviews.csv` file inside a `data/` directory.
 
 ### Additional Resources for Data
 - [Kaggle Datasets](https://www.kaggle.com/datasets)
