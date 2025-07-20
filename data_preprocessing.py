@@ -20,5 +20,5 @@ def preprocess_data(filepath):
     return df
 
 if __name__ == "__main__":
-    df = preprocess_data(r"C:\Users\aagam\OneDrive\Desktop\Resume project\sentiment_analysis_dashboard\data\Reviews.csv")
-    df.to_csv(r"C:\Users\aagam\OneDrive\Desktop\Resume project\sentiment_analysis_dashboard\data\clean_amazon_reviews.csv", index=False)
+    df = preprocess_data("data/Reviews.csv")
+    df.to_csv("data/clean_amazon_reviews.csv", index=False)
